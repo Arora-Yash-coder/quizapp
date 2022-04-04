@@ -22,12 +22,21 @@ class _MyAppState extends State<MyApp> {
       future: _initialization,
       builder: (context, snapshot) {
         if (snapshot.hasError) {
-          return const Text("error");
+          return const Text(
+            "error",
+            textDirection: TextDirection.ltr,
+          );
         }
         if (snapshot.connectionState == ConnectionState.done) {
-          return const Text("App");
+          return const Text(
+            "App",
+            textDirection: TextDirection.ltr,
+          );
         }
-        return const Text("loading");
+        return const Text(
+          "loading",
+          textDirection: TextDirection.ltr,
+        );
       },
     );
   }
