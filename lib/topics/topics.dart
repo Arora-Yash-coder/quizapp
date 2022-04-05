@@ -6,8 +6,19 @@ class TopicsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      bottomNavigationBar: BottomNavBar(),
+    return Scaffold(
+      bottomNavigationBar: const BottomNavBar(),
+      body: Center(
+        child: ElevatedButton(
+          child: Text(
+            'about',
+            style: Theme.of(context).textTheme.button,
+          ),
+          onPressed: () {
+            Navigator.pushNamed(context, '/about');
+          },
+        ),
+      ),
     );
   }
 }
