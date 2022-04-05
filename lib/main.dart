@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:firebase_core/firebase_core.dart';
+import 'package:quizapp/routes.dart';
+import 'package:quizapp/theme.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,9 +30,9 @@ class _MyAppState extends State<MyApp> {
           );
         }
         if (snapshot.connectionState == ConnectionState.done) {
-          return const Text(
-            "App",
-            textDirection: TextDirection.ltr,
+          return MaterialApp(
+            routes: appRoutes,
+            theme: appTheme,
           );
         }
         return const Text(
