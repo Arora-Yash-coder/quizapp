@@ -6,7 +6,17 @@ class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text('about'),
+        backgroundColor: Colors.pinkAccent,
+      ),
+      body: const Center(
+        child: Padding(
+          padding: EdgeInsets.all(60.0),
+          child: Text(
+              'An app i built for practising, basically everything in flutter'),
+        ),
+      ),
     );
   }
 }
