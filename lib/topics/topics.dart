@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:quizapp/services/firestore.dart';
 import 'package:quizapp/services/models.dart';
 import 'package:quizapp/shared/shared.dart';
+import 'package:quizapp/topics/drawer.dart';
 import 'package:quizapp/topics/topic_item.dart';
 
 import 'package:quizapp/services/auth.dart';
@@ -53,6 +54,7 @@ class TopicsPage extends StatelessWidget {
               ],
             ),
             bottomNavigationBar: const BottomNavBar(),
+            drawer: TopicDrawer(topics: topics),
             body: GridView.count(
               primary: false,
               padding: const EdgeInsets.all(20.0),
