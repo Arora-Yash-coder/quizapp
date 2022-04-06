@@ -12,9 +12,17 @@ class HomePage extends StatelessWidget {
       stream: AuthService().userStream,
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return const Text('Loading');
+          return const Scaffold(
+            body: Center(
+              child: Text('Loading'),
+            ),
+          );
         } else if (snapshot.hasError) {
-          return const Text('error');
+          return const Scaffold(
+            body: Center(
+              child: Text('Error'),
+            ),
+          );
         } else if (snapshot.hasData) {
           return const TopicsPage();
         } else {
