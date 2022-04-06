@@ -21,8 +21,7 @@ class LoginPage extends StatelessWidget {
               child: LoginButton(
                 color: Colors.blue,
                 icon: FontAwesomeIcons.google,
-                text: 'Continue as Google',
-                // loginMethod: () {},
+                text: 'Continue using Google',
                 loginMethod: AuthService().googleLogin,
               ),
             ),

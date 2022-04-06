@@ -34,6 +34,5 @@ class AuthService {
     } on FirebaseAuth catch (e) {
       print(e);
     }
-    await FirebaseAuth.instance.signOut();
   }
 }
