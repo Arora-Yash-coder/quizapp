@@ -60,7 +60,12 @@ class QuizList extends StatelessWidget {
             elevation: 4,
             margin: const EdgeInsets.all(4),
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                      builder: (context) => QuizScreen(quizId: quiz.id)),
+                );
+              },
               child: Container(
                 padding: const EdgeInsets.all(8),
                 child: ListTile(
