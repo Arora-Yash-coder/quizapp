@@ -1,9 +1,11 @@
 import 'dart:async';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:rxdart/rxdart.dart';
-import 'package:quizapp/services/auth.dart';
-import 'package:quizapp/services/models.dart';
 
+import 'package:quizapp/services/services.dart';
+
+// Used to connect with Database
 class FirestoreService {
   final FirebaseFirestore _db = FirebaseFirestore.instance;
 

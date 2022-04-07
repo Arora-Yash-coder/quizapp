@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+// Theme data for the entire project
 var appTheme = ThemeData(
   fontFamily: GoogleFonts.nunito().fontFamily,
   brightness: Brightness.dark,

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:quizapp/services/auth.dart';
-import 'package:quizapp/services/models.dart';
 
+import 'package:provider/provider.dart';
+
+import 'package:quizapp/services/services.dart';
 import '../shared/shared.dart';
 
+// The page used to show report to the user
 class ProfilePage extends StatelessWidget {
   const ProfilePage({Key? key}) : super(key: key);
 
@@ -64,7 +65,7 @@ class ProfilePage extends StatelessWidget {
         ),
       );
     } else {
-      return const Loader();
+      return const LoadingScreen();
     }
   }
 }

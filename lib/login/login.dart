@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 import 'package:quizapp/services/auth.dart';
 
+// Login Page of the project
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -17,6 +20,7 @@ class LoginPage extends StatelessWidget {
             const FlutterLogo(
               size: 150,
             ),
+            // Button used for Login using google
             Flexible(
               child: LoginButton(
                 color: Colors.blue,
@@ -25,6 +29,7 @@ class LoginPage extends StatelessWidget {
                 loginMethod: AuthService().googleLogin,
               ),
             ),
+            // Button used for Login anonymously
             Flexible(
               child: LoginButton(
                 color: Colors.deepPurple,
@@ -40,6 +45,7 @@ class LoginPage extends StatelessWidget {
   }
 }
 
+// Login Button Template
 class LoginButton extends StatelessWidget {
   final Color color;
   final IconData icon;

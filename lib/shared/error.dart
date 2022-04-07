@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// Used to show errors to the user
 class ErrorMessage extends StatelessWidget {
   final String message;
 

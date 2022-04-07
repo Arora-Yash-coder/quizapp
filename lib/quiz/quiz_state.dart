@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+
 import 'package:quizapp/services/models.dart';
 
+// Screen used to show questions to the user
 class QuizState with ChangeNotifier {
   double _progress = 0;
   Option? _selected;

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// The about page for the project
 class AboutPage extends StatelessWidget {
   const AboutPage({Key? key}) : super(key: key);
 
@@ -14,7 +15,8 @@ class AboutPage extends StatelessWidget {
         child: Padding(
           padding: EdgeInsets.all(60.0),
           child: Text(
-              'An app i built for practising, basically everything in flutter'),
+            'An app i built for practising, basically everything in flutter',
+          ),
         ),
       ),
     );

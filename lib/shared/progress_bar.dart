@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:quizapp/services/models.dart';
+
 import 'package:provider/provider.dart';
 
+import 'package:quizapp/services/models.dart';
+
+// The custom progress bar widget
 class AnimatedProgressbar extends StatelessWidget {
+  // Value to be shown
   final double value;
+  // Size of the progress bar
   final double height;
 
   const AnimatedProgressbar({Key? key, required this.value, this.height = 12})
@@ -46,11 +51,12 @@ class AnimatedProgressbar extends StatelessWidget {
     );
   }
 
-  /// Always round negative or NaNs to min value
+  // Always round negative or NaNs to min value
   _floor(double value, [min = 0.0]) {
     return value.sign <= min ? min : value;
   }
 
+  // Generates a color based on the value
   _colorGen(double value) {
     int rbg = (value * 255).toInt();
     return Colors.deepOrange.withGreen(rbg).withRed(255 - rbg);

@@ -1,6 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
 part 'models.g.dart';
 
+// All the documents used in the database
 @JsonSerializable()
 class Option {
   String value;

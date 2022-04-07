@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// The Loading Screen used in the project
 class LoadingScreen extends StatelessWidget {
   const LoadingScreen({Key? key}) : super(key: key);
 

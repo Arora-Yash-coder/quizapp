@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
+
+import 'package:quizapp/services/services.dart';
 import 'package:quizapp/quiz/quiz_state.dart';
-import 'package:quizapp/services/firestore.dart';
-import 'package:quizapp/services/models.dart';
 import 'package:quizapp/shared/shared.dart';
 
 class QuizScreen extends StatelessWidget {
@@ -57,6 +58,7 @@ class QuizScreen extends StatelessWidget {
   }
 }
 
+// Start Page of the quizes
 class StartPage extends StatelessWidget {
   final Quiz quiz;
   const StartPage({Key? key, required this.quiz}) : super(key: key);
@@ -94,6 +96,7 @@ class StartPage extends StatelessWidget {
   }
 }
 
+// End page of the quizes
 class CongratsPage extends StatelessWidget {
   final Quiz quiz;
   const CongratsPage({Key? key, required this.quiz}) : super(key: key);
