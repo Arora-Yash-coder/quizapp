@@ -36,6 +36,7 @@ class _MyAppState extends State<MyApp> {
           return StreamProvider(
               create: (_) => FirestoreService().streamReport(),
               initialData: Report(),
+              catchError: (_, __) => null,
               builder: (context, snapshot) {
                 return MaterialApp(
                   routes: appRoutes,

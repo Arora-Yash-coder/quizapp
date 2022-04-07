@@ -58,9 +58,8 @@ class AnimatedProgressbar extends StatelessWidget {
 }
 
 class TopicProgress extends StatelessWidget {
-  const TopicProgress({Key? key, required this.topic}) : super(key: key);
-
   final Topic topic;
+  const TopicProgress({Key? key, required this.topic}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
