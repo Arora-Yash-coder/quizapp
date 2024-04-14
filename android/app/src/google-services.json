@@ -15,11 +15,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "967568815161-db3jqo2o29to901mf92m2f8b8so9cins.apps.googleusercontent.com",
+          "client_id": "967568815161-kg84kbtiu31h4ri94u7hpa3ji3helmvu.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.quizapp",
-            "certificate_hash": "ff07ae9c788ff4d0f7c60a29f0fd0333db5e5322"
+            "certificate_hash": "f55fb9a780505998d0f28bf9e8cfb8a404d9597b"
           }
         },
         {
