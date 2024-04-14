@@ -20,7 +20,7 @@ class QuizScreen extends StatelessWidget {
         builder: (context, snapshot) {
           var state = Provider.of<QuizState>(context);
           if (!snapshot.hasData || snapshot.hasError) {
-            return const Loader();
+            return const Center(child: Loader());
           } else {
             var quiz = snapshot.data!;
             return Scaffold(
@@ -174,7 +174,7 @@ class QuestionPage extends StatelessWidget {
                       children: [
                         Icon(
                             state.selected == opt
-                                ? FontAwesomeIcons.checkCircle
+                                ? FontAwesomeIcons.circleCheck
                                 : FontAwesomeIcons.circle,
                             size: 30),
                         Expanded(
@@ -207,6 +207,7 @@ class QuestionPage extends StatelessWidget {
       builder: (BuildContext context) {
         return Container(
           height: 250,
+          width: MediaQuery.of(context).size.width,
           padding: const EdgeInsets.all(16),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -219,7 +220,7 @@ class QuestionPage extends StatelessWidget {
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    primary: correct ? Colors.green : Colors.red),
+                    backgroundColor: correct ? Colors.green : Colors.red),
                 child: Text(
                   correct ? 'Onward!' : 'Try Again',
                   style: const TextStyle(

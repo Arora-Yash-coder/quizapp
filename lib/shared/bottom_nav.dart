@@ -29,7 +29,7 @@ class BottomNavBar extends StatelessWidget {
             FontAwesomeIcons.userCircle,
             size: 20,
           ),
-          label: 'Profiles',
+          label: 'Profile',
         ),
       ],
       fixedColor: Colors.deepPurple[200],

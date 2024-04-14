@@ -17,8 +17,11 @@ class LoginPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            const FlutterLogo(
-              size: 150,
+            const Padding(
+              padding: EdgeInsets.all(32.0),
+              child: FlutterLogo(
+                size: 250,
+              ),
             ),
             // Button used for Login using google
             Flexible(

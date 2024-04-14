@@ -51,7 +51,7 @@ class ProfilePage extends StatelessWidget {
               ElevatedButton(
                 child: const Text('Sign Out'),
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.deepOrange,
+                  backgroundColor: Colors.deepOrange,
                 ),
                 onPressed: () async {
                   await AuthService().signOut();

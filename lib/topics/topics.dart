@@ -45,9 +45,9 @@ class TopicsPage extends StatelessWidget {
               title: const Text('Topics'),
               actions: [
                 IconButton(
-                  icon: Icon(
-                    FontAwesomeIcons.userCircle,
-                    color: Colors.pink[200],
+                  icon: const Icon(
+                    FontAwesomeIcons.circleUser,
+                    color: Colors.white,
                   ),
                   onPressed: () => Navigator.pushNamed(context, '/profile'),
                 )
